@@ -313,9 +313,8 @@ tr:hover td{background:#232d4a}
 ═════════════════════════════════════════════════════════════════ -->
 <script>
 // ── CONFIG ───────────────────────────────────────────────────────────
-const API = window.location.hostname === 'localhost'
-  ? 'https://food-analytics-api.onrender.com' : '';
-document.getElementById('api-lbl').textContent = API || window.location.origin;
+const API = 'https://food-analytics-api.onrender.com';
+document.getElementById('api-lbl').textContent = API;
 
 // ── UTILS ────────────────────────────────────────────────────────────
 const fmt  = n => isNaN(n)||n==null ? '—' : Number(n).toLocaleString('en-IN');
